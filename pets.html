@@ -32,6 +32,7 @@
           let i;
           let slides = document.getElementsByClassName("mySlides");
           let dots = document.getElementsByClassName("dot");
+          let pets = document.getElementsByClassName("content-region hide");
           if (n > slides.length) {slideIndex = 1}
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
@@ -40,8 +41,12 @@
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
           }
+          for (i = 0; i < pets.length; i++) {
+            pets[i].style.display = "none";
+          }
           slides[slideIndex-1].style.display = "block";
           dots[slideIndex-1].className += " active";
+          pets[slideIndex-1].style.display = "block";
         }
       </script>
     
@@ -127,6 +132,87 @@
               <span class="dot" onclick="currentSlide(5)"></span>
               <span class="dot" onclick="currentSlide(6)"></span>
             </div>
+
+            <!-- More about each pet below carousel-->
+            <div id="container">
+                <div class="inner">
+                  <div id="content"> 
+                    
+                    <div id="dog" class="content-region hide">
+                        <h2>Dog (the cat)</h2>
+                        <p>
+                          <ul>
+                            <li>Age = </li>
+                            <li>.</li>
+                            <li>.</li>
+                            
+                          </ul>
+                        </p>
+                    </div>
+
+                    <div id="frodo" class="content-region hide">
+                        <h2>Frodo</h2>
+                        <p>
+                          <ul>
+                            <li>Age = </li>
+                            <li>.</li>
+                            <li>.</li>
+                            
+                          </ul>
+                        </p>
+                    </div>
+
+                    <div id="hannah" class="content-region hide">
+                        <h2>Hannah</h2>
+                        <p>
+                          <ul>
+                            <li>Age = </li>
+                            <li>.</li>
+                            <li>.</li>
+                            
+                          </ul>
+                        </p>
+                    </div>
+
+                    <div id="jasmine" class="content-region hide">
+                      <h2>Jasmine</h2>
+                      <p>
+                        <ul>
+                          <li>Age = </li>
+                          <li>.</li>
+                          <li>.</li>
+                          
+                        </ul>
+                      </p>
+                    </div>
+                    
+                    <div id="joule" class="content-region hide">
+                        <h2>Joule</h2>
+                        <p>
+                          <ul>
+                            <li>Age = </li>
+                            <li>.</li>
+                            <li>.</li>
+                            
+                          </ul>
+                        </p>
+                    </div>
+                
+                    <div id="kat" class="content-region hide">
+                        <h2>Kat</h2>
+                        <p>
+                          <ul>
+                            <li>Age = </li>
+                            <li>.</li>
+                            <li>.</li>
+                            
+                          </ul>
+                        </p>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
 
     <footer>  
         

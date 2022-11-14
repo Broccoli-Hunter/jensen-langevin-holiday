@@ -1,3 +1,27 @@
+/* Popover */
+.popover {
+  border: 2px dotted black;
+  color: black;
+  font-size: 12px;
+  text-align:center;
+}
+
+/* Popover Header
+.popover-title {
+  background-color: #e4f3ce;
+  color: #463e3e;
+  font-size: 28px;
+  text-align:center;
+}
+
+/* Popover Body 
+.popover-content {
+  background-color: coral;
+  color: #FFFFFF;
+  padding: 25px;
+}
+*/
+
 /**
  * Typography & Text styles
  */
@@ -13,6 +37,8 @@ body {
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
 }
+
+ 
 
 /**
  * Links
@@ -93,7 +119,7 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(background.jpg) center center no-repeat fixed;
+  background:url(assets/painted_snow.jpg) center center no-repeat fixed;
   background-size:cover;
 }
 body {
@@ -101,7 +127,7 @@ body {
   margin:25px auto;
 }
 header, #content, footer { 
-  background: rgba(0,0,0,.8); 
+  background: rgba(0,0,0,.5); 
   padding:25px;
   color:#FFFFFF; 
 }

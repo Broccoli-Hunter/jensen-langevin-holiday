@@ -10,7 +10,8 @@
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="custom-bootstrap-styles.css" rel="stylesheet" type="text/css"/>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
    
@@ -27,31 +28,34 @@
   </head>
   
   <body>
-
-    <header id="header">
-      <img src="logo.jpg"> <!-- put main image here -->
-      <h1>Happy Holidays from Vincent, Laura, & Kaylee</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="index.html">Main</a></li> <!--main=index.html-->
-        <li><a href="main.html#family">Family Updates</a></li> <!-- rest of these are main.html-->
-        <li><a href="main.html#vincent">Vincent</a></li>
-        <li><a href="main.html#laura">Laura</a></li>
-        <li><a href="main.html#kaylee">Kaylee</a></li>
-        <li><a href="pets.html">Tiny Overlords</a></li> <!--pets.html for carousel crap-->
-      </ul>                 
-    </header>
-   
-    Main page... nothing to see here
-
-    <footer>  <!-- TODO: Put this into table for better spacing-->
-      <p>Site credits...</p>
-      <a target="_blank" href="https://icons8.com/icon/rjbsjWTM161N/christmas">Christmas</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
+    <div id="container">
+      <div id="inner">
+        <div id="content"></div>
+          <div id="main_imgs">
+            <img src="assets/index_header.jpg" style="width:100% ;">
+          </div>
+          <div>
+            <header id="header">
+              <h1>Happy Holidays from Vincent, Laura, & Kaylee</h1>
+              
+              <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+              <ul class="main-menu">
+                <li><a href="index.html">Main</a></li> <!--main=index.html-->
+                <li><a href="main.html#family">Family Updates</a></li> <!-- rest of these are main.html-->
+              </ul>                 
+            </header>
+          </div>
+          <div>
+            <!-- Thinking about adding a comment bod: https://linuxhint.com/create-comment-box-using-html-css-javascript/ -->
+            <footer>  <!-- TODO: Put this into table for better spacing-->
+              <p>Site credits...</p>
+              <a target="_blank" href="https://icons8.com/icon/rjbsjWTM161N/christmas">Christmas</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </footer>
+          </div>
+          <!-- Load additional JS scripts here -->
+          <script type="text/javascript" src="script.js"></script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

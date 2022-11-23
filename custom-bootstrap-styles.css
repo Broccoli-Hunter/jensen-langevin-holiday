@@ -6158,7 +6158,13 @@ a.close.disabled {
 .popover-header {
     padding: .5rem .75rem;
     margin-bottom: 0;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
+    font-style: bold;
+    font-weight: 400;
+    word-spacing: normal;
+    letter-spacing: normal;
     background-color: #f7f7f7;
     border-bottom: 1px solid #ebebeb;
     border-top-left-radius: calc(.3rem - 1px);

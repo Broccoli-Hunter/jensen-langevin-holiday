@@ -93,17 +93,19 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(countdown-background.jpg) center center no-repeat fixed; /* https://www.pixelstalk.net/blue-christmas-wallpaper-hd/ */
+  background:url(assets/backgrounds/beautiful_winter_night.jpg) center center no-repeat fixed;
   background-size:cover;
 }
 body {
   max-width:800px;
   margin:25px auto;
+  background: rgba(36,39,56,.8);
+  color:#d5c5ae; 
 }
 header, #content, footer { 
   /* background: rgba(0,0,0,.8); */
   padding:25px;
-  color:#050523; 
+  color:#f6f6f9; 
 }
 
 /* Menu Links */
